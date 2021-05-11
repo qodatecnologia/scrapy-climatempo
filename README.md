@@ -4,7 +4,7 @@
 
 "Basicamente, você deverá usar<br> 
 * um site de Climatempo, por exemplo, e 
-* salvar na frequência horária um ou X municípios dos dados apresentados como esse componente(cidade/estado/temperatura/descrição/sensação/umidade/Pressão/vento/atualização). 
+* salvar na frequência horária um ou X municípios dos dados apresentados como esse componente(temperatura/descrição/sensação/umidade/Pressão/vento/atualização). 
 * Estruturar em um mongo ou MySQL e usar o scrapy para isso."
 
 # Executando aplicação:
@@ -12,3 +12,10 @@
 2. instale as libs necessárias com "pip install -r requirements.txt" no diretório principal
 3. Inicie mongodb localmente e altere -se necessário- os dados de localhost com porta 27017
 4. execute no terminal "scrapy crawl ct" para execução dp crawler que de hora em hora executará a requisição e armazenará em collections(mongodb)
+
+## Resultados:
+1. Execução por minuto no print abaixo, podendo ser setado para hora com 3600 segundos na linha 30 do arquivo "ct.py"
+![](https://github.com/qodatecnologia/scrapy-climatempo/blob/master/coding.png?raw=true)
+
+2. Database populado:
+![](https://github.com/qodatecnologia/scrapy-climatempo/blob/master/mongo_compass.png?raw=true)
