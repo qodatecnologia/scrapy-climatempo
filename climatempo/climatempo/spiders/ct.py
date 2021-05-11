@@ -27,4 +27,4 @@ class ClimatempoSpider(scrapy.Spider):
 	          'pressure' : pressure,
 	          'wind' : wind,
 	        }
-	        time.sleep(60)
+	        time.sleep(3600) #change this to time you prefer(in seconds). 1 hour same as 3600 seconds
